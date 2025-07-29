@@ -6,6 +6,11 @@
   <title>EDITORS CENTRAL - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <script>
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -211,11 +216,14 @@
   <section class="order-section">
     <h2>📥 Order Editing & Voice Services from 𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇</h2>
     <p>Fill out the form below and we’ll get back to you via email or WhatsApp!</p>
-    <form action="https://formspree.io/f/mnnzvrab" method="POST">
+    <form action="https://formspree.io/f/xdkdzvke" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="text" name="whatsapp" placeholder="WhatsApp Number" required>
       <textarea name="details" rows="5" placeholder="What service do you need? (e.g., Editing, Voice - Deep/Cartoon)" required></textarea>
+      <input type="hidden" name="_subject" value="New Order from EDITORS CENTRAL">
+      <input type="hidden" name="_replyto" value="turbofell1934@gmail.com">
+      <input type="hidden" name="_next" value="https://thankyou.page.or.custom-message">
       <button type="submit">Send Order Request</button>
     </form>
   </section>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -99,17 +100,17 @@
     .social-icons a:hover {
       background-color: #3a3a3a;
     }
-    .voice-section, .about-section {
+    .voice-section, .about-section, .order-section {
       background-color: #121212;
       padding: 60px 20px;
       text-align: center;
       border-top: 2px solid #333;
     }
-    .voice-section h2, .about-section h2 {
+    .voice-section h2, .about-section h2, .order-section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
     }
-    .voice-section p, .about-section p {
+    .voice-section p, .about-section p, .order-section p {
       max-width: 700px;
       margin: auto;
       font-size: 1.1rem;
@@ -129,6 +130,34 @@
     }
     .voice-contact-button:hover {
       background: #1ebe5d;
+    }
+    .order-section form {
+      max-width: 600px;
+      margin: 30px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .order-section input, .order-section textarea {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 12px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .order-section button {
+      background: #4f46e5;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .order-section button:hover {
+      background: #4338ca;
     }
     footer {
       text-align: center;
@@ -179,9 +208,21 @@
     <a href="https://wa.me/7736512393" target="_blank" class="voice-contact-button"><i class="fab fa-whatsapp"></i> Contact Voice Artist</a>
   </section>
 
+  <section class="order-section">
+    <h2>📥 Order Editing & Voice Services from 𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇</h2>
+    <p>Fill out the form below and we’ll get back to you via email or WhatsApp!</p>
+    <form action="https://formspree.io/f/mnnzvrab" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="whatsapp" placeholder="WhatsApp Number" required>
+      <textarea name="details" rows="5" placeholder="What service do you need? (e.g., Editing, Voice - Deep/Cartoon)" required></textarea>
+      <button type="submit">Send Order Request</button>
+    </form>
+  </section>
+
   <footer>
     &copy; 2025 𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇. All rights reserved. <br>
-    Authorized by: <strong>TurboIG</strong>
+    Authorized by: <strong>Turbofell</strong>
   </footer>
 
   <script>

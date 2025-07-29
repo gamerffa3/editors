@@ -1,1 +1,196 @@
-# editors
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDITORS CENTRAL - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at center, #2a2a2d, #0e0e0f);
+      color: #f1f1f1;
+      line-height: 1.6;
+      overflow-x: hidden;
+      cursor: none;
+    }
+    .custom-cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid #fff;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+      z-index: 9999;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(to right, #444, #111);
+      color: white;
+      animation: slideDown 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    .main-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .main-buttons a {
+      background: #9e9e9e;
+      color: black;
+      padding: 14px 30px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 12px;
+      transition: background 0.3s;
+    }
+    .main-buttons a:hover {
+      background: #d1d5db;
+    }
+    .social-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: #1a1a1c;
+      border-top: 2px solid #444;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .social-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .social-icons a {
+      background-color: #2f2f2f;
+      padding: 12px 24px;
+      border-radius: 10px;
+      color: #f1f1f1;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .social-icons a:hover {
+      background-color: #3a3a3a;
+    }
+    .voice-section, .about-section {
+      background-color: #121212;
+      padding: 60px 20px;
+      text-align: center;
+      border-top: 2px solid #333;
+    }
+    .voice-section h2, .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .voice-section p, .about-section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #d4d4d4;
+    }
+    .voice-contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .voice-contact-button:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.95rem;
+      background: #111;
+      color: #aaa;
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor" id="cursor"></div>
+  <header>
+    <h1>𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇</h1>
+    <p>Next-gen Editing Services – Future Ready, Ultra Fast</p>
+    <div class="main-buttons">
+      <a href="https://chat.whatsapp.com/EfZRkgRs2zY8BUGXktsPuF" target="_blank">Join WhatsApp Group</a>
+      <a href="https://wa.me/7736512393" target="_blank">Contact on WhatsApp</a>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>We are a team of professional video editors, thumbnail creators, and voice artists providing high-quality services for creators, influencers, businesses, and agencies. Our team includes experts in deep voiceovers, cartoon dubbing, and high-end post-production editing.</p>
+  </section>
+
+  <section class="social-section">
+    <h2>Connect With 𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇</h2>
+    <div class="social-icons">
+      <a href="https://instagram.com/yourinsta" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://t.me/yourtelegram" target="_blank"><i class="fab fa-telegram"></i>Telegram</a>
+      <a href="https://discord.gg/aj3q27rxge" target="_blank"><i class="fab fa-discord"></i>Discord</a>
+      <a href="mailto:turbofell1934@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+    </div>
+  </section>
+
+  <section class="voice-section">
+    <h2>🎧 Voice Artists Available at 𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇</h2>
+    <p>We also provide professional voice artists for your projects, including <strong>deep voice</strong> narration and <strong>cartoon voice</strong> characterizations. Perfect for intros, ads, animations, and more!</p>
+    <a href="https://wa.me/7736512393" target="_blank" class="voice-contact-button"><i class="fab fa-whatsapp"></i> Contact Voice Artist</a>
+  </section>
+
+  <footer>
+    &copy; 2025 𝙀𝘿𝙄𝙏𝙊𝙍𝙎 𝘾𝙀𝙉𝙏𝙍𝘼𝙇. All rights reserved. <br>
+    Authorized by: <strong>Turbofell</strong>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  </script>
+</body>
+</html>
